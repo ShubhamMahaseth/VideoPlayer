@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
-import {View, Text, Appearance, Button} from 'react-native';
-import styles from './style';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {View, Text, Appearance} from 'react-native';
+import {lightStyles, darkStyles} from './style';
 import Video from 'react-native-video';
 
 const VideoPlayer = ({navigation, route}) => {
@@ -15,18 +13,24 @@ const VideoPlayer = ({navigation, route}) => {
   const {external, videoURL} = route.params;
 
   return (
-    <View style={styles.container}>
+    <View
+      style={theme == 'dark' ? darkStyles.container : lightStyles.container}>
       <Video
         source={external ? {uri: videoURL} : videoURL} // Can be a URL or a local file.
-        style={{flex: 1, width: '100%'}}
-
-        // ref={ref => {
-        //   this.player = ref;
-        // }} // Store reference
-        // onBuffer={this.onBuffer} // Callback when remote video is buffering
-        // onError={this.videoError} // Callback when video cannot be loaded
-        // style={styles.backgroundVideo}
+        resizeMode="cover"
+        controls={true}
+        paused
+        repeat={true}
+        style={theme == 'dark' ? darkStyles.video : lightStyles.video}
       />
+      <View
+        style={
+          theme == 'dark'
+            ? darkStyles.designContainer
+            : lightStyles.designContainer
+        }>
+        <Text style={{color: 'white'}}>'"shubham"</Text>
+      </View>
     </View>
   );
 };
