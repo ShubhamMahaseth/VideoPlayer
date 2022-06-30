@@ -6,17 +6,17 @@ export const lightStyles = StyleSheet.create({
   },
   video: {
     position: 'absolute',
-    top: Dimensions.get('screen').width / 1.56,
+    top: Dimensions.get('screen').width / 1.76,
     left: 0,
     bottom: 0,
     right: 0,
     width: '100%',
-    height: 225,
+    height: 245,
   },
   designContainer: {
-    top: Dimensions.get('screen').height / 1.94,
+    top: Dimensions.get('screen').height / 1.99,
     flexDirection: 'row-reverse',
-    marginLeft: 10,
+    marginLeft: 15,
   },
 });
 
@@ -27,11 +27,16 @@ export const darkStyles = StyleSheet.create({
   },
   video: {
     position: 'absolute',
-    top: Dimensions.get('screen').width / 1.56,
+    top: Dimensions.get('screen').width / 1.76,
     left: 0,
     bottom: 0,
     right: 0,
     width: '100%',
-    height: 225,
+    height: 245,
+  },
+  designContainer: {
+    top: Dimensions.get('screen').height / 1.99,
+    flexDirection: 'row-reverse',
+    marginLeft: 15,
   },
 });

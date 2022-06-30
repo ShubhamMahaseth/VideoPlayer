@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {View, Text, Appearance} from 'react-native';
 import {lightStyles, darkStyles} from './style';
 import Video from 'react-native-video';
+import Expand from '../../assets/Expand.svg';
 
 const VideoPlayer = ({navigation, route}) => {
   const [theme, setTheme] = useState(Appearance.getColorScheme());
@@ -29,7 +30,8 @@ const VideoPlayer = ({navigation, route}) => {
             ? darkStyles.designContainer
             : lightStyles.designContainer
         }>
-        <Text style={{color: 'white'}}>'"shubham"</Text>
+        <Expand width={20} height={20} />
+        {/* <Text style={{color: 'white'}}>shubham</Text> */}
       </View>
     </View>
   );
