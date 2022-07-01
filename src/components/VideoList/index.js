@@ -9,9 +9,6 @@ const VideoList = ({navigation}) => {
     setTheme(theme.colorScheme);
   });
 
-  function num() {
-    console.log('Internal Video');
-  }
   return (
     <View style={theme == 'dark' ? themeBlack.wrapper : themeWhite.wrapper}>
       <TouchableOpacity
@@ -29,20 +26,6 @@ const VideoList = ({navigation}) => {
               : themeWhite.textContainer
           }>
           External Video
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => {
-          num();
-        }}
-        style={theme == 'dark' ? themeBlack.container : themeWhite.container}>
-        <Text
-          style={
-            theme == 'dark'
-              ? themeBlack.textContainer
-              : themeWhite.textContainer
-          }>
-          Internal Video
         </Text>
       </TouchableOpacity>
     </View>
