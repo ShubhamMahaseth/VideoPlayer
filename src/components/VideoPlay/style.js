@@ -2,7 +2,7 @@ import {StyleSheet, Dimensions} from 'react-native';
 export const lightStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
   video: {
     position: 'absolute',
@@ -23,7 +23,7 @@ export const lightStyles = StyleSheet.create({
 export const darkStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
   },
   video: {
     position: 'absolute',

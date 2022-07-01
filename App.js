@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import VideoPlayer from './src/components/VideoPlayer';
+import VideoPlay from './src/components/VideoPlay';
 import VideoList from './src/components/VideoList';
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="VideoList">
         <Stack.Screen
-          name="VideoPlayer"
-          component={VideoPlayer}
+          name="VideoPlay"
+          component={VideoPlay}
           options={{title: 'Video Player'}}
         />
         <Stack.Screen

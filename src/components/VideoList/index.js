@@ -16,7 +16,7 @@ const VideoList = ({navigation}) => {
     <View style={theme == 'dark' ? themeBlack.wrapper : themeWhite.wrapper}>
       <TouchableOpacity
         onPress={() =>
-          navigation.navigate('VideoPlayer', {
+          navigation.navigate('VideoPlay', {
             external: true,
             videoURL: 'https://www.w3schools.com/html/mov_bbb.mp4',
           })

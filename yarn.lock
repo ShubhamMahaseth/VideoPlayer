@@ -1580,9 +1580,9 @@
   "version" "15.7.5"
 
 "@types/react-native-vector-icons@^6.4.6":
-  "integrity" "sha512-z4sexbuZ7nmYsp7Z9YB5fSQoN3KFn6nZA3QsCkQLOYnVmVlxX4U22v/bM9Xx/6dOA1vClxoRZo2CFDX16uryXQ=="
-  "resolved" "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.10.tgz"
-  "version" "6.4.10"
+  "integrity" "sha512-jUy9CsTu1Cl3k6WRE7GnqBRHbuSv55PRVfMEel+fF73HKpF8g5JmTzTVMBDX8NfY3PlfIY5VlxiqWZxdjm38Pg=="
+  "resolved" "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.11.tgz"
+  "version" "6.4.11"
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
@@ -5973,6 +5973,14 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
+"react-native-vector-icons@^9.2.0":
+  "integrity" "sha512-wKYLaFuQST/chH3AJRjmOLoLy3JEs1JR6zMNgTaemFpNoXs0ztRnTxcxFD9xhX7cJe1/zoN5BpQYe7kL0m5yyA=="
+  "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.2.0.tgz"
+  "version" "9.2.0"
+  dependencies:
+    "prop-types" "^15.7.2"
+    "yargs" "^16.1.1"
+
 "react-native-video-library@^1.0.5":
   "integrity" "sha512-Qf6fywQ4kD3vG0okNjrCLv3rvDKEU9kiMtIRP9Coihh8z11e82eOQJQWIlGvv/Hs8R6XHkKCrW9GDxQ06mzhvw=="
   "resolved" "https://registry.npmjs.org/react-native-video-library/-/react-native-video-library-1.0.5.tgz"
@@ -5986,7 +5994,7 @@
     "react-native-vector-icons" "^8.1.0"
     "react-native-video" "^5.1.1"
 
-"react-native-video@^5.1.1", "react-native-video@^5.2.0":
+"react-native-video@^5.1.1":
   "integrity" "sha512-5SK1lxyzrCkZF+WuxUxLR1Pt65E0rsWB1w1GrGxSLdC9zWYBumcmuHl+wPJ7UQvznjaH2Ze7uU1R3arejI7+WQ=="
   "resolved" "https://registry.npmjs.org/react-native-video/-/react-native-video-5.2.0.tgz"
   "version" "5.2.0"
